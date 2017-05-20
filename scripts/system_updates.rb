@@ -9,7 +9,7 @@ output = ''
 
 # arch linux
 if find_executable0 'pacman'
-  output = `sudo pacman -Sy >/dev/null && pacman -Qu | wc -l`
+  output = `pacman -Qu | wc -l`
 end
 
 puts output

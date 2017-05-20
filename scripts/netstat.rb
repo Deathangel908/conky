@@ -16,7 +16,7 @@ network_lines.each_with_index do |line, index|
   ip_address = columns[5]
   name = columns.last.split('"')[1]
   if protocol && ip_address && name
-    output << protocol << '     ' << ip_address << smart_space(ip_address) << name << "\n"
+    output << protocol << '  ' << ip_address << smart_space(ip_address) << name << "\n"
   end
 end
 

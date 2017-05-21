@@ -72,11 +72,11 @@ end
 
 # conky output
 def img_tag(i, x)
-  "${image $HOME/.conky/weather_icons/#{@icons[i]}.png -p #{x},320 -s 75x45}"
+  "${image $HOME/.conky/weather_icons/#{@icons[i]}.png -p #{x},340 -s 75x45}"
 end
 
 g20  = '${goto 20}'
-g130 = '${goto 130}'
+g130 = '${goto 140}'
 c0   = '${color0}'
 c60  = '${color gray60}'
 
